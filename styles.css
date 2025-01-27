@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background-image: url('path-to-your-background-image.jpg'); /* Use an image of geometric figures and algebra as background */
+    background-image: url(<img src="blob:chrome-untrusted://media-app/e6e3875a-2d4c-4021-b7a7-5646bec1c95a" alt="file-fHaJs2BrvLPN24DKo2ratRnP (1).jpg"/>); /* Use an image of geometric figures and algebra as background */
     background-size: cover;
     color: white;
     padding: 20px;
