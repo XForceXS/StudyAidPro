@@ -1,0 +1,252 @@
+/* General Styles */
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+
+}
+
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background-color: #00796b;
+
+  color: white;
+
+  padding: 10px 20px;
+
+}
+
+
+.navbar .logo {
+
+  font-size: 1.5em;
+
+  font-weight: bold;
+
+}
+
+
+.nav-links a {
+
+  margin: 0 10px;
+
+  color: white;
+
+  text-decoration: none;
+
+}
+
+
+.search-bar {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+.search-bar input {
+
+  padding: 5px;
+
+  border: none;
+
+  border-radius: 5px 0 0 5px;
+
+  outline: none;
+
+}
+
+
+.search-bar button {
+
+  background-color: #004d40;
+
+  border: none;
+
+  color: white;
+
+  padding: 6px 10px;
+
+  border-radius: 0 5px 5px 0;
+
+  cursor: pointer;
+
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #004d40;
+
+  color: white;
+
+}
+
+
+.welcome-section h1 {
+
+  font-size: 2.5em;
+
+}
+
+
+.welcome-section p {
+
+  font-size: 1.2em;
+
+}
+
+
+/* Subjects Grid */
+
+.subjects {
+
+  padding: 20px;
+
+  text-align: center;
+
+}
+
+
+.subjects .grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 20px;
+
+}
+
+
+.subject-card {
+
+  padding: 15px;
+
+  background-color: #80cbc4;
+
+  color: #004d40;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+
+
+.subject-card:hover {
+
+  background-color: #004d40;
+
+  color: white;
+
+}
+
+
+/* Popular Resources */
+
+.popular-resources {
+
+  padding: 20px;
+
+}
+
+
+.popular-resources h2 {
+
+  text-align: center;
+
+}
+
+
+.popular-resources ul {
+
+  list-style: none;
+
+  padding: 0;
+
+}
+
+
+.popular-resources li {
+
+  margin: 10px 0;
+
+}
+
+
+.popular-resources button {
+
+  background-color: #004d40;
+
+  color: white;
+
+  border: none;
+
+  padding: 5px 10px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+
+/* Announcements */
+
+.announcements {
+
+  padding: 20px;
+
+  background-color: #e0f2f1;
+
+}
+
+
+.announcements h2 {
+
+  text-align: center;
+
+}
+
+
+/* Footer */
+
+.footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background-color: #004d40;
+
+  color: white;
+
+}
