@@ -1,9 +1,14 @@
-// Search functionality
-function searchAssignment() {
-    alert("Search functionality to be implemented");
+// Toggle the visibility of the menu
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
 }
 
-// Menu toggle functionality
-function toggleMenu() {
-    alert("Menu functionality to be implemented");
+// Placeholder function for search
+function searchAssignment() {
+    alert('Search functionality to be implemented');
 }
