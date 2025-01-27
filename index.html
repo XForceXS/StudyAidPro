@@ -1,134 +1,49 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Welcome to X力量遊戲's Resource Hub</title>
-
-  <link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Times+New+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>AnswerHub</title>
 </head>
-
 <body>
+    <div class="header">
+        <h1>AnswerHub</h1>
+        <p>Your go-to site for homework answers</p>
+    </div>
 
-  <!-- Top Navigation Bar -->
+    <div class="container">
+        <input type="text" id="search-bar" placeholder="Search for assignments..." style="width: 300px; padding: 10px; margin: 10px 0;">
+        <button class="button" onclick="searchAssignment()">Search</button>
+        
+        <div class="announcement">
+            <h2>Announcements</h2>
+            <p>Stay tuned for updates!</p>
+        </div>
 
-  <nav class="navbar">
+        <div class="most-viewed">
+            <h2>Most Viewed</h2>
+            <p>Check out the most popular assignments!</p>
+        </div>
 
-    <div class="logo">X力量遊戲</div>
+        <button class="button" onclick="downloadFiles()">Download Skins</button>
+    </div>
 
-    <div class="nav-links">
+    <footer>
+        <p>Contact us at: p1619076@gmail.com</p>
+    </footer>
 
-      <a href="#subjects">Subjects</a>
+    <script>
+        function searchAssignment() {
+            // Implement search functionality here
+            alert('Search functionality to be implemented');
+        }
 
-      <a href="#pricing">Pricing</a>
-
-      <a href="#announcements">Announcements</a>
-
-      <a href="#contact">Contact Us</a>
-
-    </div>
-
-    <div class="search-bar">
-
-      <input type="text" placeholder="Search for your subject or topic...">
-
-      <button>🔍</button>
-
-    </div>
-
-  </nav>
-
-
-  <!-- Welcome Section -->
-
-  <header class="welcome-section">
-
-    <h1>Welcome to X力量遊戲's Resource Hub</h1>
-
-    <p>Your go-to site for academic resources, quick answers, and problem-solving support.</p>
-
-  </header>
-
-
-  <!-- Body Section -->
-
-  <main>
-
-    <!-- Subjects Grid -->
-
-    <section id="subjects" class="subjects">
-
-      <h2>Subjects</h2>
-
-      <div class="grid">
-
-        <div class="subject-card">Pre-Algebra</div>
-
-        <div class="subject-card">CSP</div>
-
-        <div class="subject-card">English</div>
-
-        <div class="subject-card">Science</div>
-
-        <div class="subject-card">History</div>
-
-        <div class="subject-card">Other Subjects</div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Popular Resources -->
-
-    <section id="popular-resources" class="popular-resources">
-
-      <h2>Popular Resources</h2>
-
-      <ul>
-
-        <li>CSP Week 2 Answers - <button>Download</button></li>
-
-        <li>Pre-Algebra Week 3 Answers - <button>Download</button></li>
-
-        <li>English Essay Example - <button>Download</button></li>
-
-      </ul>
-
-    </section>
-
-
-    <!-- Announcements -->
-
-    <section id="announcements" class="announcements">
-
-      <h2>Announcements</h2>
-
-      <p>📢 New Pre-Algebra files uploaded: Week 3 answers!</p>
-
-      <p>📢 Check out our new CSP resources!</p>
-
-    </section>
-
-  </main>
-
-
-  <!-- Footer Section -->
-
-  <footer id="contact" class="footer">
-
-    <p>Contact Us: <a href="mailto:p1619076@gmail.com">p1619076@gmail.com</a></p>
-
-    <p>© 2025 X力量遊戲. All Rights Reserved.</p>
-
-  </footer>
-
+        function downloadFiles() {
+            // Implement download functionality here
+            alert('Download feature is under development');
+        }
+    </script>
 </body>
-
 </html>
