@@ -1,13 +1,14 @@
 body {
     font-family: 'Times New Roman', Times, serif; /* Main font */
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Darker text color */
+    background-color: black; /* Background color */
+    color: #1E90FF; /* Blue text color */
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #4CAF50; /* Green header */
+    background-image: url('path-to-your-background-image.jpg'); /* Use an image of geometric figures and algebra as background */
+    background-size: cover;
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,28 +26,49 @@ h1 {
     padding: 20px;
 }
 
-.button {
-    background-color: #008CBA; /* Blue button */
+.menu-button {
+    position: absolute; /* Fixed position for the menu button */
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50; /* Green color for the menu button */
     color: white;
     border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    padding: 10px;
     cursor: pointer;
 }
 
-.announcement, .most-viewed {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+.announcement, .most-viewed, .explore, .premium {
+    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy image */
+    background-size: cover;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
     width: 100%;
+    opacity: 0.9; /* Slight transparency */
 }
 
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+/* Additional styling for each section */
+.subjects {
+    margin-top: 20px;
+}
+
+.link {
+    display: block;
+    margin: 5px 0;
+    color: white;
+}
+
+h2 {
+    color: #FF4500; /* Orange color for headings */
+}
+
+/* Premium styling */
+.premium {
+    background-color: #FFD700; /* Gold color for premium section */
+    color: black;
 }
