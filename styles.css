@@ -1,71 +1,81 @@
 /* Basic styles for the body */
 body {
-    font-family: 'Times New Roman', Times, serif; /* Main font */
-    background-color: black; /* Background color */
-    color: #1E90FF; /* Blue text color */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #1E90FF;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Video background styling */
 .video-background {
-    position: absolute; /* Position the video behind the header */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Place the video behind all content */
+    z-index: -1;
 }
 
 video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire area */
+    object-fit: cover;
 }
 
 /* Header section with title */
 .header {
     position: relative;
     text-align: center;
-    z-index: 1; /* Keep the text above the video */
+    z-index: 1;
     color: white;
     padding: 20px;
 }
 
 h1 {
-    font-family: 'Lora', serif; /* Title font */
-    font-size: 3em; /* Larger title */
+    font-family: 'Lora', serif;
+    font-size: 3em;
 }
 
 p {
-    font-family: 'Times New Roman', serif;
     font-size: 1.5em;
 }
 
-/* Menu button positioning */
+/* Menu button styling */
 .menu-button {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #4CAF50; /* Green button */
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
-/* Main content styling */
-.container {
+/* Search bar section styling */
+.search-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    z-index: 1; /* Ensure content is above video */
+    margin-bottom: 20px;
 }
 
-/* Divider styling for white lines */
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.button {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Divider styling */
 .divider {
     border: 0;
     height: 1px;
@@ -76,17 +86,18 @@ p {
 
 /* Announcement and most-viewed sections */
 .announcement, .most-viewed {
-    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy background */
+    background-image: url('path-to-galaxy-image.jpg');
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     width: 90%;
-    opacity: 0.9; /* Slight transparency */
+    opacity: 0.9;
+    text-align: center;
 }
 
 h2 {
-    color: #FF4500; /* Orange color for headings */
+    color: #FF4500;
 }
 
 .subjects {
@@ -101,23 +112,11 @@ h2 {
 }
 
 .link:hover {
-    color: #FFD700; /* Gold color on hover */
+    color: #FFD700;
 }
 
 /* Footer styling */
 footer {
     margin-top: 30px;
     text-align: center;
-}
-
-/* Button and search bar styling */
-.button, #search-bar {
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-/* Premium section (if applicable) */
-.premium {
-    background-color: #FFD700; /* Gold color */
-    color: black;
 }
