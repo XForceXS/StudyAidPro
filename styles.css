@@ -1,74 +1,114 @@
+/* Basic styles for the body */
 body {
     font-family: 'Times New Roman', Times, serif; /* Main font */
     background-color: black; /* Background color */
     color: #1E90FF; /* Blue text color */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Video background styling */
+.video-background {
+    position: absolute; /* Position the video behind the header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind all content */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+}
+
+/* Header section with title */
 .header {
-    background-image: url('path-to-your-background-image.jpg'); /* Use an image of geometric figures and algebra as background */
-    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Keep the text above the video */
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
 h1 {
     font-family: 'Lora', serif; /* Title font */
-    font-size: 2.5em;
+    font-size: 3em; /* Larger title */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5em;
 }
 
+/* Menu button positioning */
 .menu-button {
-    position: absolute; /* Fixed position for the menu button */
+    position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #4CAF50; /* Green color for the menu button */
+    background-color: #4CAF50; /* Green button */
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
-.announcement, .most-viewed, .explore, .premium {
-    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy image */
-    background-size: cover;
-    border: 1px solid #ddd;
+/* Main content styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    margin: 10px 0;
-    width: 100%;
+    z-index: 1; /* Ensure content is above video */
+}
+
+/* Announcement section */
+.announcement, .most-viewed {
+    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy background */
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 90%;
     opacity: 0.9; /* Slight transparency */
-}
-
-footer {
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Additional styling for each section */
-.subjects {
-    margin-top: 20px;
-}
-
-.link {
-    display: block;
-    margin: 5px 0;
-    color: white;
 }
 
 h2 {
     color: #FF4500; /* Orange color for headings */
 }
 
-/* Premium styling */
+.subjects {
+    margin-top: 20px;
+}
+
+.link {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Button and search bar styling */
+.button, #search-bar {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Premium section (if applicable) */
 .premium {
-    background-color: #FFD700; /* Gold color for premium section */
+    background-color: #FFD700; /* Gold color */
     color: black;
 }
