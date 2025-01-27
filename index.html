@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Times+New+Roman&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Connects to the styles.css file -->
+    <link rel="stylesheet" href="styles.css">
     <title>StudyAidPro</title>
 </head>
 <body>
@@ -16,50 +16,59 @@
         </video>
     </div>
 
-    <!-- Header Section with Title -->
+    <!-- Header Section -->
     <div class="header">
         <h1>StudyAidPro</h1>
-        <p>Your on this site for answers</p>
+        <p>Your site for answers</p>
     </div>
 
     <!-- Menu Button -->
     <button class="menu-button" onclick="toggleMenu()">Menu</button>
 
-    <!-- Main Content Container -->
+    <!-- Menu Dropdown -->
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="most_viewed.html">Most Viewed</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="explore.html">Explore</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
-        <!-- Search Bar Section -->
         <input type="text" id="search-bar" placeholder="Search for assignments..." style="width: 300px; padding: 10px; margin: 10px 0;">
         <button class="button" onclick="searchAssignment()">Search</button>
-        <hr class="divider"> <!-- White line after search bar -->
+        <hr class="divider">
 
         <!-- Announcement Section -->
         <div class="announcement">
             <h2>Announcements</h2>
             <p>Stay tuned for updates! Here, you will find tips and important information.</p>
-            <a href="announcements.html" class="link">View All Announcements</a> <!-- Links to announcements.html -->
         </div>
-        <hr class="divider"> <!-- White line after announcement -->
+        <hr class="divider">
 
         <!-- Most Viewed Section -->
         <div class="most-viewed">
             <h2>Most Viewed</h2>
             <p>Check out the most popular assignments!</p>
             <div class="subjects">
-                <a href="most_viewed.html" class="link">Biology - Teacher: Galka</a>
-                <a href="most_viewed.html" class="link">Computer Science Principles - Teacher: Hellmers</a>
-                <a href="most_viewed.html" class="link">English - Teacher: Dean</a>
-                <a href="most_viewed.html" class="link">Freshman Studies - Teacher: Hammond</a>
-                <a href="most_viewed.html" class="link">Law Enforcement - Teacher: Murphy</a>
+                <a href="#" class="link">Biology - Teacher: Galka</a>
+                <a href="#" class="link">Computer Science Principles - Teacher: Hellmers</a>
+                <a href="#" class="link">English - Teacher: Dean</a>
+                <a href="#" class="link">Freshman Studies - Teacher: Hammond</a>
+                <a href="#" class="link">Law Enforcement - Teacher: Murphy</a>
             </div>
         </div>
-        <hr class="divider"> <!-- White line after most viewed -->
+        <hr class="divider">
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>Contact us at: <a href="mailto:p1619076@gmail.com">p1619076@gmail.com</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Links to scripts.js -->
+    <script src="scripts.js"></script>
 </body>
 </html>
