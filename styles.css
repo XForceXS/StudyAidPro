@@ -1,74 +1,62 @@
+/* Basic styling for the body */
 body {
-    font-family: 'Times New Roman', Times, serif; /* Main font */
-    background-color: black; /* Background color */
-    color: #1E90FF; /* Blue text color */
+    font-family: 'Times New Roman', serif; /* Use Times New Roman for body text */
     margin: 0;
     padding: 0;
+    color: white; /* Set text color to white for better visibility on dark backgrounds */
 }
 
-.header {
-    background-image: url(<img src="blob:chrome-untrusted://media-app/e6e3875a-2d4c-4021-b7a7-5646bec1c95a" alt="file-fHaJs2BrvLPN24DKo2ratRnP (1).jpg"/>); /* Use an image of geometric figures and algebra as background */
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Header styling */
+header {
+    position: relative; /* Allows the video to be positioned behind */
+    text-align: center; /* Center the title and subtitle */
+    z-index: 1; /* Bring header content above the video */
+    padding: 20px; /* Add padding around the header */
 }
 
-h1 {
-    font-family: 'Lora', serif; /* Title font */
-    font-size: 2.5em;
+/* Video background styles */
+.video-background {
+    position: absolute; /* Position the video absolutely */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Hide overflow */
+    z-index: -1; /* Send the video behind other content */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+/* Video styles */
+video {
+    min-width: 100%; /* Ensure the video covers full width */
+    min-height: 100%; /* Ensure the video covers full height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
 }
 
-.menu-button {
-    position: absolute; /* Fixed position for the menu button */
-    top: 10px;
-    left: 10px;
-    background-color: #4CAF50; /* Green color for the menu button */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+/* Announcement section styling */
+.announcement {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 15px; /* Add padding */
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.announcement, .most-viewed, .explore, .premium {
-    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy image */
-    background-size: cover;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px 0;
-    width: 100%;
-    opacity: 0.9; /* Slight transparency */
+/* Most viewed section styling */
+.most-viewed {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 15px; /* Add padding */
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
 }
 
+/* Footer styling */
 footer {
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Additional styling for each section */
-.subjects {
-    margin-top: 20px;
-}
-
-.link {
-    display: block;
-    margin: 5px 0;
-    color: white;
-}
-
-h2 {
-    color: #FF4500; /* Orange color for headings */
-}
-
-/* Premium styling */
-.premium {
-    background-color: #FFD700; /* Gold color for premium section */
-    color: black;
+    text-align: center; /* Center the footer text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Ensure footer is positioned correctly */
+    z-index: 1; /* Bring footer content above the video */
 }
