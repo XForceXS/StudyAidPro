@@ -65,9 +65,18 @@ p {
     z-index: 1; /* Ensure content is above video */
 }
 
-/* Announcement section */
+/* Divider styling for white lines */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+    width: 90%;
+}
+
+/* Announcement and most-viewed sections */
 .announcement, .most-viewed {
-    background-image: url('images/galaxy.jpg'); /* Use a galaxy background */
+    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy background */
     background-size: cover;
     padding: 20px;
     margin: 20px;
