@@ -67,7 +67,7 @@ p {
 
 /* Announcement section */
 .announcement, .most-viewed {
-    background-image: url('path-to-galaxy-image.jpg'); /* Use a galaxy background */
+    background-image: url('images/galaxy.jpg'); /* Use a galaxy background */
     background-size: cover;
     padding: 20px;
     margin: 20px;
