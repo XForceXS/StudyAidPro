@@ -7,5 +7,3 @@ function searchAssignment() {
 function toggleMenu() {
     alert("Menu functionality to be implemented");
 }
-
-
