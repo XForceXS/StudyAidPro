@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Times+New+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>AnswerHub</title>
+    <title>StudyAidPro</title>
 </head>
 <body>
     <div class="header">
-        <h1>AnswerHub</h1>
-        <p>Your go-to site for homework answers</p>
+        <h1>StudyAidPro</h1>
+        <p>Your on this site for answers</p>
     </div>
+
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
 
     <div class="container">
         <input type="text" id="search-bar" placeholder="Search for assignments..." style="width: 300px; padding: 10px; margin: 10px 0;">
@@ -19,15 +21,20 @@
         
         <div class="announcement">
             <h2>Announcements</h2>
-            <p>Stay tuned for updates!</p>
+            <p>Stay tuned for updates! Here, you will find tips and important information.</p>
         </div>
 
         <div class="most-viewed">
             <h2>Most Viewed</h2>
             <p>Check out the most popular assignments!</p>
+            <div class="subjects">
+                <a href="#" class="link">Biology - Teacher: Galka</a>
+                <a href="#" class="link">Computer Science Principles - Teacher: Hellmers</a>
+                <a href="#" class="link">English - Teacher: Dean</a>
+                <a href="#" class="link">Freshman Studies - Teacher: Hammond</a>
+                <a href="#" class="link">Law Enforcement - Teacher: Murphy</a>
+            </div>
         </div>
-
-        <button class="button" onclick="downloadFiles()">Download Skins</button>
     </div>
 
     <footer>
@@ -40,9 +47,9 @@
             alert('Search functionality to be implemented');
         }
 
-        function downloadFiles() {
-            // Implement download functionality here
-            alert('Download feature is under development');
+        function toggleMenu() {
+            // Implement menu toggle functionality here
+            alert('Menu functionality to be implemented');
         }
     </script>
 </body>
